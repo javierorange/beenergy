@@ -8,18 +8,42 @@ A production-ready energy consulting website built with React and Tailwind CSS.
 - **Industrial Aesthetic**: Dark themes, electric yellow accents, and CSS patterns
 - **Interactive**: Hover effects, smooth transitions, and mobile navigation
 
-## Usage
-```tsx
-import BeEnergyWebsite from '@/sd-components/f2ced9de-f7c9-418f-9c56-2e1c41a9874f';
+## Development
 
-function Demo() {
-  return (
-    <div className="w-full h-screen">
-      <BeEnergyWebsite />
-    </div>
-  );
-}
+```bash
+npm install
+npm run dev
 ```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Deployment
+
+This project has two environments:
+
+### Development Environment
+- **Branch**: `dev`
+- **URL**: `https://[username].github.io/beenergy-dev/`
+- **Trigger**: Push to `dev` branch
+- **Base Path**: `/beenergy-dev/`
+
+### Production Environment
+- **Branch**: `main`
+- **URL**: `https://[username].github.io/beenergy/`
+- **Trigger**: Push to `main` branch
+- **Base Path**: `/beenergy/`
+
+### Workflow
+1. Develop on `dev` branch → deploys to dev environment
+2. Test and verify changes in dev environment
+3. Merge `dev` to `main` → deploys to production environment
+
+### Manual Deployment
+You can also trigger deployments manually using the "workflow_dispatch" option in GitHub Actions.
 
 ## Pages
 - `/` - Homepage with Hero, Stats, and Intro
