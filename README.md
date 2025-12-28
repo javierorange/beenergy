@@ -50,6 +50,24 @@ See [VERCEL_MIGRATION.md](./VERCEL_MIGRATION.md) for detailed migration instruct
 - `/services` - Detailed services list with features
 - `/about` - Company mission and Contact Form
 
+## QA Plan
+
+For comprehensive Quality Assurance procedures, see [QA_PLAN.md](./QA_PLAN.md).
+
+### Testing Strategy
+- **Unit Testing**: Jest + React Testing Library (80% coverage target)
+- **Integration Testing**: Component interaction flows
+- **E2E Testing**: Playwright automation
+- **Performance**: Lighthouse CI + WebPageTest
+- **Accessibility**: WCAG 2.1 AA compliance
+- **Security**: Dependency scanning + XSS prevention
+
+### Key Metrics
+- Performance: Lighthouse scores >90
+- Coverage: Test coverage >80%
+- Accessibility: 100% WCAG 2.1 AA
+- Release Success: >98% success rate
+
 ## Theme
 - Primary: `#FFEA00` (Yellow)
 - Background: `#1c1f24` (Dark), `#f6f7f5` (Light)
