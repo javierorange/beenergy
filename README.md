@@ -23,27 +23,27 @@ npm run build
 
 ## Deployment
 
-This project has two environments:
+### Current Setup: GitHub Pages
+- **Development**: `dev` branch → `https://javierorange.github.io/beenergy-dev/`
+- **Production**: `main` branch → `https://javierorange.github.io/beenergy/`
 
-### Development Environment
-- **Branch**: `dev`
-- **URL**: `https://[username].github.io/beenergy-dev/`
-- **Trigger**: Push to `dev` branch
-- **Base Path**: `/beenergy-dev/`
+### Planned Migration: Vercel
+For independent dev/prod environments, see [VERCEL_MIGRATION.md](./VERCEL_MIGRATION.md).
 
-### Production Environment
-- **Branch**: `main`
-- **URL**: `https://[username].github.io/beenergy/`
-- **Trigger**: Push to `main` branch
-- **Base Path**: `/beenergy/`
+### Vercel Benefits
+- **True environment separation** with distinct URLs
+- **Automatic preview deployments** for pull requests
+- **Zero-config setup** for Vite projects
+- **Built-in analytics** and performance monitoring
+- **Instant rollbacks** and deployment history
 
-### Workflow
-1. Develop on `dev` branch → deploys to dev environment
-2. Test and verify changes in dev environment
-3. Merge `dev` to `main` → deploys to production environment
+### Migration Workflow
+1. **Setup**: Create Vercel account and import project
+2. **Configure**: Set branch-based deployment rules
+3. **Deploy**: Push to trigger automatic deployments
+4. **Decommission**: Remove GitHub Pages configuration
 
-### Manual Deployment
-You can also trigger deployments manually using the "workflow_dispatch" option in GitHub Actions.
+See [VERCEL_MIGRATION.md](./VERCEL_MIGRATION.md) for detailed migration instructions.
 
 ## Pages
 - `/` - Homepage with Hero, Stats, and Intro
